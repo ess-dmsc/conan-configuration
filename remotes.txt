@@ -1,0 +1,7 @@
+ conan-center https://conan.bintray.com true
+ conan-transit https://conan-transit.bintray.com true
+ conan-community https://api.bintray.com/conan/conan-community/conan true
+ bincrafters https://api.bintray.com/conan/bincrafters/public-conan true
+ ess-dmsc https://api.bintray.com/conan/ess-dmsc/conan true
+ vthiery https://api.bintray.com/conan/vthiery/conan-packages true
+ 
