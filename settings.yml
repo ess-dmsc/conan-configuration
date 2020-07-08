@@ -42,14 +42,16 @@ compiler:
     gcc:
         version: ["4.1", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9",
                   "5", "5.1", "5.2", "5.3", "5.4", "5.5",
-                  "6", "6.1", "6.2", "6.3", "6.4",
-                  "7", "7.1", "7.2", "7.3",
+                  "6", "6.1", "6.2", "6.3", "6.4", "6.5",
+                  "7", "7.1", "7.2", "7.3", "7.4", "7.5",
                   "8", "8.1", "8.2", "8.3", "8.4",
-                  "9", "9.1", "9.2"]
+                  "9", "9.1", "9.2", "9.3",
+                  "10", "10.1"]
         libcxx: [libstdc++, libstdc++11]
         threads: [None, posix, win32] #  Windows MinGW
         exception: [None, dwarf2, sjlj, seh] # Windows MinGW
         libc: [None, glibc, musl]
+        cppstd: [None, 98, gnu98, 11, gnu11, 14, gnu14, 17, gnu17, 20, gnu20]
     Visual Studio:
         runtime: [MD, MT, MTd, MDd]
         version: ["8", "9", "10", "11", "12", "14", "15", "16"]
@@ -57,15 +59,32 @@ compiler:
                   v140, v140_xp, v140_clang_c2, LLVM-vs2012, LLVM-vs2012_xp,
                   LLVM-vs2013, LLVM-vs2013_xp, LLVM-vs2014, LLVM-vs2014_xp,
                   LLVM-vs2017, LLVM-vs2017_xp, v141, v141_xp, v141_clang_c2]
+        cppstd: [None, 14, 17, 20]
     clang:
         version: ["3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "4.0",
-                  "5.0", "6.0", "7.0",
-                  "8"]
+                  "5.0", "6.0", "7.0", "7.1",
+                  "8", "9", "10"]
         libcxx: [libstdc++, libstdc++11, libc++]
         libc: [None, glibc, musl]
+        cppstd: [None, 98, gnu98, 11, gnu11, 14, gnu14, 17, gnu17, 20, gnu20]
     apple-clang:
         version: ["5.0", "5.1", "6.0", "6.1", "7.0", "7.3", "8.0", "8.1", "9.0", "9.1", "10.0", "11.0"]
         libcxx: [libstdc++, libc++]
+        cppstd: [None, 98, gnu98, 11, gnu11, 14, gnu14, 17, gnu17, 20, gnu20]
+    intel:
+        version: ["11", "12", "13", "14", "15", "16", "17", "18", "19"]
+        base:
+            gcc:
+                <<: *gcc
+                threads: [None]
+                exception: [None]
+            Visual Studio:
+                <<: *visual_studio
+            apple-clang:
+                <<: *apple_clang
+    qcc:
+        version: ["4.4", "5.4"]
+        libcxx: [cxx, gpp, cpp, cpp-ne, accp, acpp-ne, ecpp, ecpp-ne]
 
 build_type: [None, Debug, Release, RelWithDebInfo, MinSizeRel]
 cppstd: [None, 98, gnu98, 11, gnu11, 14, gnu14, 17, gnu17, 20, gnu20]
