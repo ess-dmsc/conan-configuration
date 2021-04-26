@@ -10,6 +10,12 @@ conan config install http://github.com/ess-dmsc/conan-configuration.git
 
 **Beware, installing this configuration will delete any other other remotes you may have configured.**
 
+To use packages from the Bincrafters repository, run the following command
+
+```
+conan config set general.revisions_enabled=True
+```
+
 The important things done by installing this configuration are:
 - setting the remotes to the ones we use in our projects
 - adding the compiler.libc setting for gcc and clang, so that packages can be built against glibc or musl, this is useful for builds on Alpine Linux where musl is used.
