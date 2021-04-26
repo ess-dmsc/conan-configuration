@@ -10,7 +10,7 @@ conan config install http://github.com/ess-dmsc/conan-configuration.git
 
 **Beware, installing this configuration will delete any other other remotes you may have configured.**
 
-To use packages from the Bincrafters repository, run the following command
+To use packages from the Bincrafters repository, run the following command:
 
 ```
 conan config set general.revisions_enabled=True
