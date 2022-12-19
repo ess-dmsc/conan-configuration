@@ -1,5 +1,4 @@
  conancenter https://center.conan.io true
  bincrafters https://bincrafters.jfrog.io/artifactory/api/conan/public-conan true
- bincrafters https://bincrafters.jfrog.io/artifactory/api/conan/public-conan true
  ecdc-conan-release https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release true
  ecdc https://artifactoryconan.esss.dk/artifactory/api/conan/ecdc true
