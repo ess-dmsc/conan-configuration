@@ -6,11 +6,6 @@
 		"verify_ssl": true
 	 },
 	 {
-		"name": "bincrafters",
-		"url": "https://bincrafters.jfrog.io/artifactory/api/conan/public-conan",
-		"verify_ssl": true
-	 },
-	 {
 		"name": "ecdc-conan-release",
 		"url": "https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release",
 		"verify_ssl": true
