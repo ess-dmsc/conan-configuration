@@ -9,6 +9,11 @@
 		"name": "ecdc-conan-release",
 		"url": "https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release",
 		"verify_ssl": true
+	 },
+	 {
+		"name": "ecdc-conan-external",
+		"url": "https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-external",
+		"verify_ssl": true
 	 }
 	]
 }
