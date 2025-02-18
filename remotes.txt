@@ -1,2 +1,1 @@
- conancenter https://center.conan.io true
- ecdc-conan-release https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release true
+ ecdc-conan-virtual https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-virtual true

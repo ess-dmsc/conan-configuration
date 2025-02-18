@@ -1,13 +1,8 @@
 {
 	"remotes": [
 	 {
-		"name": "conancenter",
-		"url": "https://center.conan.io",
-		"verify_ssl": true
-	 },
-	 {
-		"name": "ecdc-conan-release",
-		"url": "https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release",
+		"name": "ecdc-conan-virtual",
+		"url": "https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-virtual",
 		"verify_ssl": true
 	 }
 	]
