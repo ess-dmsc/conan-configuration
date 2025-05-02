@@ -5,6 +5,10 @@ compiler=gcc
 compiler.version=11
 compiler.libcxx=libstdc++11
 build_type=Release
+
+[package_id]
+hdf5:compiler.libcxx=full_version_mode
+
 [build_requires]
 [options]
 [env]
