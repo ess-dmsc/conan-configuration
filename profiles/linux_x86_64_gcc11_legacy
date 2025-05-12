@@ -5,6 +5,10 @@ compiler=gcc
 compiler.version=11
 compiler.libcxx=libstdc++
 build_type=Release
+
+[conf]
+tools.build:compiler_executables={"c": "/opt/rh/devtoolset-11/root/usr/bin/gcc", "cpp": "/opt/rh/devtoolset-11/root/usr/bin/g++"}
+
 [build_requires]
 [options]
 [env]
