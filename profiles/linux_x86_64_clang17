@@ -1,0 +1,15 @@
+[settings]
+os=Linux
+arch=x86_64
+compiler=clang
+compiler.version=17
+compiler.libcxx=libstdc++11
+build_type=Release
+
+[env]
+CC=/usr/bin/clang-17
+CXX=/usr/bin/clang++-17
+
+# Fix for implicit function declaration errors
+CFLAGS=-Wno-error=implicit-function-declaration
+CPPFLAGS=-Wno-error=implicit-function-declaration
